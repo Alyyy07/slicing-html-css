@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter Embed</title>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="header-section">
+            <img src="avatar.png" alt="" class="header-image">
+            <div class="header-user">
+                <p class="header-name">John Doe</p>
+                <p class="header-account">@realjohndoe</p>
+            </div>
+            <img src="twitter.png" class="header-icon">
+        </div>
+        <div class="comment-section">
+            <p class="comment">Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'? <span class="hastag">#programming #coding #debugging</span></p>
+        </div>
+        <div class="info-section">
+            <div class="info-like">
+                <img src="heart.png" class="like-icon"><span class="jumlah-like">650</span>
+            </div>
+                <span class="info-datetime">3:40 PM - Feb 24, 2022</span>
+        </div>
+        <button id="gantiWarna"> Ganti !!</button>
+    </div>
+    <script>
+        const body = document.querySelector('body');
+        const container = document.querySelector('.container');
+        const name = document.querySelector('.header-name');
+        const account = document.querySelector('.header-account');
+        const like = document.querySelector('.jumlah-like');
+        const date = document.querySelector('.info-datetime');
+        const comment = document.querySelector('.comment');
+        document.getElementById('gantiWarna').addEventListener('click',()=>{
+            body.classList.toggle('body-night');
+            container.classList.toggle('container-night');
+            name.classList.toggle('header-name-night');
+            account.classList.toggle('header-account-night');
+            like.classList.toggle('jumlah-like-night');
+            date.classList.toggle('info-datetime-night');
+            comment.classList.toggle('comment-night');
+        });
+    </script>
+</body>
+</html>

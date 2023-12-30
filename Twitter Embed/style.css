@@ -1,0 +1,147 @@
+.body {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  background-color: #ecf8ff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body-night{
+    background-color: #141D26;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 601px;
+  margin: 50px auto;
+  padding: 35px 31px;
+  border-radius: 10px;
+  border: 1px solid rgba(29, 161, 242, 0.2);
+  background: #fff;
+  box-shadow: 0px 15px 60px 0px rgba(29, 161, 242, 0.15);
+}
+
+.container-night {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 601px;
+  margin: 50px auto;
+  padding: 35px 31px;
+  border-radius: 10px;
+  background: #243447;
+  box-shadow: 0px 15px 60px 0px rgba(52, 81, 116, 0.15);
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+.header-image {
+  width: 50px;
+  height: 50px;
+}
+.header-user {
+  margin-left: 22px;
+}
+.header-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.header-name-night {
+    color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header-account,
+.jumlah-like,
+.info-datetime {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-account-night,
+.jumlah-like-night,
+.info-datetime-night {
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+
+.comment-section {
+  padding-right: 70px;
+}
+
+.comment {
+  line-height: 26px;
+}
+
+.comment-night{
+    color: #fff;
+    line-height: 26px;
+}
+
+.hastag {
+  color: #1da1f2;
+}
+
+p {
+  margin: 0;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.info-like {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jumlah-like,
+.info-datetime {
+  font-weight: 600;
+  line-height: 26px;
+}
+.like-icon {
+  width: 24px;
+  height: 24px;
+}
+
+#gantiWarna {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  cursor: pointer;
+}
+
+
+button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #ecf8ff 0%, #141d26 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 9em;
+}
